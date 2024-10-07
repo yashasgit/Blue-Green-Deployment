@@ -8,5 +8,5 @@ spec:
   - port: 80
     targetPort: 8080
   selector:
-    app: bankapp
+    app: httpd_vim
     version: blue # This can be changed to "green" when switching traffic
