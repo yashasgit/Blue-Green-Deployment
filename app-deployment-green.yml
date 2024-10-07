@@ -15,7 +15,7 @@ spec:
         version: green
     spec:
       containers:
-      - name: bankapp
+      - name: httpd_vim
         image: yashasdocker/httpd_vim # Adjust the image tag for the green version
         ports:
         - containerPort: 8080
