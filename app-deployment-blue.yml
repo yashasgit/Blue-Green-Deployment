@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp-blue
+  name: httpd_vim-blue
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bankapp
+      app: httpd_vim
       version: blue
   template:
     metadata:
       labels:
-        app: bankapp
+        app: httpd_vim
         version: blue
     spec:
       containers:
       - name: bankapp
-        image: adijaiswal/bankapp:blue # Adjust the image tag for the blue version
+        image: yashasdocker/httpd_vim:blue # Adjust the image tag for the blue version
         ports:
         - containerPort: 8080
         env:
