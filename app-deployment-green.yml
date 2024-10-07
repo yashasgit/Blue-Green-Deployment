@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp-green
+  name: httpd_vim-green
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bankapp
+      app: httpd_vim
       version: green
   template:
     metadata:
       labels:
-        app: bankapp
+        app: httpd_vim
         version: green
     spec:
       containers:
       - name: bankapp
-        image: adijaiswal/bankapp:green # Adjust the image tag for the green version
+        image: yashasdocker/httpd_vim # Adjust the image tag for the green version
         ports:
         - containerPort: 8080
         env:
