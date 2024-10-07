@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: httpd_vim-service
+  name: bankapp-service
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: httpd_vim
+    app: bankapp
     version: blue # This can be changed to "green" when switching traffic
