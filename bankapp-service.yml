@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bankapp-service
+  name: httpd_vim-service
 spec:
   type: LoadBalancer
   ports:
